@@ -1,0 +1,35 @@
+{
+  "name": "colorganize-app",
+  "version": "1.0.2",
+  "description": "Colorganize as an Electron app for desktop",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Lars / LGK",
+  "license": "MIT",
+  "build": {
+    "appId": "com.colorganize",
+    "productName": "Colorganize",
+    "mac": {
+      "category": "public.app-category.graphics-design",
+      "icon": "icon.icns"
+    }
+  },
+  "devDependencies": {
+    "electron": "^2.0.0",
+    "electron-builder": "^20.19.2"
+  },
+  "dependencies": {
+    "electron-config": "^1.0.0"
+  }
+}
