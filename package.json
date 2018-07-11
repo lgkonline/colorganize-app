@@ -1,6 +1,6 @@
 {
   "name": "colorganize-app",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Colorganize as an Electron app for desktop",
   "main": "main.js",
   "scripts": {
@@ -20,6 +20,7 @@
   "build": {
     "appId": "com.colorganize",
     "productName": "Colorganize",
+    "icon": "icon.ico",
     "mac": {
       "category": "public.app-category.graphics-design",
       "icon": "icon.icns"

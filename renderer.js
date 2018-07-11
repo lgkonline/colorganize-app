@@ -2,6 +2,9 @@
 // be executed in the renderer process for that window.
 // All of the Node.js APIs are available in this process.
 
+// Make version of this Electron App accessable for the Web App so it can react to it.
+window.engineVersion = require("./package.json").version;
+
 const $webview = document.querySelector('webview');
 const $loader = document.querySelector('.loader');
 let isInitialLoad = true;
