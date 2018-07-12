@@ -9,7 +9,7 @@ const $webview = document.querySelector('webview');
 const $loader = document.querySelector('.loader');
 let isInitialLoad = true;
 
-$webview.src = "https://colorganize.com/?engineVersion=" + engineVersion;
+$webview.src = "https://colorganize.com/index.php?engineVersion=" + engineVersion;
 // $webview.src = "http://localhost/colorganize-with-react/index.php?engineVersion=" + engineVersion;
 
 $webview.addEventListener('did-start-loading', () => {
