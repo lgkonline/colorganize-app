@@ -9,6 +9,9 @@ const $webview = document.querySelector('webview');
 const $loader = document.querySelector('.loader');
 let isInitialLoad = true;
 
+$webview.src = "https://colorganize.com/?engineVersion=" + engineVersion;
+// $webview.src = "http://localhost/colorganize-with-react/index.php?engineVersion=" + engineVersion;
+
 $webview.addEventListener('did-start-loading', () => {
     // we use client side rendering in the web app, so the loader is only needed on the first page load
     if (isInitialLoad) {

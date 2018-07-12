@@ -1,6 +1,6 @@
 {
   "name": "colorganize-app",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Colorganize as an Electron app for desktop",
   "main": "main.js",
   "scripts": {
