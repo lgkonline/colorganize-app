@@ -8,8 +8,8 @@ const { shell } = require("electron").remote;
 
 window.engineVersion = require("./package.json").version;
 
-const $webview = document.querySelector("webview");
-const $loader = document.querySelector(".loader");
+const $webview = document.getElementById("web-control");
+const $loader = document.getElementById("loader");
 let isInitialLoad = true;
 
 $webview.src = "https://colorganize.com/index.php?engineVersion=" + engineVersion;
