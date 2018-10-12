@@ -12,9 +12,13 @@ const $webview = document.getElementById("web-control");
 const $loader = document.getElementById("loader");
 let isInitialLoad = true;
 
-$webview.src = "https://colorganize.com/index.php?engineVersion=" + engineVersion;
-// $webview.src = "http://localhost/colorganize-with-react/index.php?engineVersion=" + engineVersion;
-// $webview.src = "http://localhost:90/wegdamit/colorganize-with-react/index.php?engineVersion=" + engineVersion;
+const engineVersionParam = engineVersion.replace(/\./g, "-");
+
+$webview.src = "https://colorganize.com/home/" + engineVersionParam;
+// $webview.src = "http://localhost/colorganize-with-react/home/" + engineVersionParam;
+// $webview.src = "http://localhost:90/wegdamit/colorganize-with-react/home/" + engineVersionParam;
+
+console.log($webview.src);
 
 $webview.addEventListener("did-start-loading", () => {
     // we use client side rendering in the web app, so the loader is only needed on the first page load
