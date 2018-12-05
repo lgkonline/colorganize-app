@@ -27,10 +27,10 @@
     }
   },
   "devDependencies": {
-    "electron": "^2.0.8",
-    "electron-builder": "^20.19.2"
+    "electron": "^3.0.10",
+    "electron-builder": "^20.38.2"
   },
   "dependencies": {
-    "electron-config": "^1.0.0"
+    "electron-config": "^2.0.0"
   }
 }
