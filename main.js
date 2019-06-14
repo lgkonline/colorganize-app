@@ -1,5 +1,6 @@
 // Modules to control application life and create native browser window
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, Menu, shell } = require('electron')
+const defaultMenu = require('electron-default-menu')
 const Config = require('electron-config')
 const config = new Config()
 
@@ -33,6 +34,9 @@ function createWindow() {
     // when you should delete the corresponding element.
     mainWindow = null
   })
+
+  const menu = defaultMenu(app, shell);
+  Menu.setApplicationMenu(Menu.buildFromTemplate(menu));
 }
 
 // This method will be called when Electron has finished
